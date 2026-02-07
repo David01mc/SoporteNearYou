@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NearYou - Soporte</title>
+<title>NearYou - Soporte y Política de Privacidad</title>
 <style>
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -12,9 +12,10 @@ body {
     padding: 20px;
     line-height: 1.6;
     color: #333;
+    background: #fafafa;
 }
-h1 { 
-    color: #007AFF; 
+h1 {
+    color: #007AFF;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -23,7 +24,7 @@ h1 {
     color: #666;
     margin-bottom: 40px;
 }
-.section { 
+.section {
     margin: 30px 0;
     background: white;
     padding: 25px;
@@ -40,12 +41,36 @@ h3 {
     color: #555;
     margin-top: 20px;
 }
-.faq { 
-    background: #f5f5f5; 
-    padding: 15px; 
-    border-radius: 8px; 
+h4 {
+    color: #666;
+    margin-top: 15px;
+}
+.faq {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
     margin: 10px 0;
     border-left: 4px solid #007AFF;
+}
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 15px 0;
+}
+@media (max-width: 600px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.feature-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #007AFF;
+}
+.feature-item strong {
+    color: #007AFF;
 }
 ul {
     margin-left: 20px;
@@ -73,6 +98,31 @@ li {
     border-left: 4px solid #28a745;
     margin: 15px 0;
 }
+.warning {
+    background: #f8d7da;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #dc3545;
+    margin: 15px 0;
+}
+.nav {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #007AFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
 footer {
     text-align: center;
     margin-top: 50px;
@@ -83,319 +133,494 @@ footer {
 </style>
 </head>
 <body>
-<h1>📍 NearYou</h1>
-<p class="subtitle">Centro de Soporte y Ayuda</p>
+<h1>NearYou</h1>
+<p class="subtitle">Conecta con tu pareja cada dia, sin importar la distancia</p>
 
-<div class="section">
-<h2>Acerca de NearYou</h2>
-<p>NearYou es tu aplicación para conectar con personas mediante códigos compartidos. Comparte experiencias, contenido y conecta con otros usuarios de forma privada y anónima usando códigos únicos generados por la app.</p>
+<div class="nav">
+    <a href="#about">Acerca de</a>
+    <a href="#features">Funcionalidades</a>
+    <a href="#faq">FAQ</a>
+    <a href="#privacy">Privacidad</a>
+    <a href="#terms">Terminos</a>
+    <a href="#contact">Contacto</a>
 </div>
 
-<div class="section">
+<!-- ==================== ACERCA DE ==================== -->
+<div class="section" id="about">
+<h2>Acerca de NearYou</h2>
+<p>NearYou es una aplicacion disenada para parejas en relaciones a distancia. Cada dia, la app os propone una pregunta unica para responder de multiples formas: texto, dibujo, foto o cancion. Vinculaos mediante un codigo unico, compartid respuestas, mantened vuestra racha de dias consecutivos y descubrid nuevas formas de conectar.</p>
+
+<div class="positive">
+<strong>Disponible en iOS y Android</strong> &mdash; Version actual: 1.3.4
+</div>
+</div>
+
+<!-- ==================== FUNCIONALIDADES ==================== -->
+<div class="section" id="features">
+<h2>Funcionalidades</h2>
+
+<h3>Pregunta del Dia</h3>
+<p>Un ciclo de 365 preguntas diarias disenadas para profundizar en vuestra relacion. Cada pregunta sugiere un formato de respuesta optimo.</p>
+
+<h3>4 Formas de Responder</h3>
+<div class="feature-grid">
+    <div class="feature-item">
+        <strong>Texto</strong><br>
+        Escribe tus respuestas sobre un fondo con textura de papel.
+    </div>
+    <div class="feature-item">
+        <strong>Dibujo</strong><br>
+        Lienzo libre con herramientas de dibujo, paleta de colores y pinceles.
+    </div>
+    <div class="feature-item">
+        <strong>Foto</strong><br>
+        Captura o selecciona fotos que se muestran en un marco estilo Polaroid.
+    </div>
+    <div class="feature-item">
+        <strong>Cancion</strong><br>
+        Dedica canciones buscando en Spotify o Apple Music con enlace directo.
+    </div>
+</div>
+
+<h3>Vinculacion de Pareja</h3>
+<ul>
+    <li>Cada usuario obtiene un codigo unico para vincularse con su pareja</li>
+    <li>Una vez vinculados, ambos pueden ver las respuestas del otro</li>
+    <li>Monedero compartido de gemas entre la pareja</li>
+    <li>Los packs de preguntas comprados se comparten</li>
+</ul>
+
+<h3>Chat en Pareja</h3>
+<ul>
+    <li>Mensajes de texto en tiempo real</li>
+    <li>Envio de fotos dentro del chat</li>
+    <li>Historial de conversacion completo</li>
+    <li>Mensajes ilimitados cuando estas vinculado con tu pareja</li>
+</ul>
+
+<h3>Racha de Dias Consecutivos</h3>
+<p>Registra cuantos dias seguidos habeis respondido juntos. Recibe notificaciones si vuestra racha esta en riesgo.</p>
+
+<h3>Packs de Preguntas</h3>
+<p>7 packs tematicos disponibles para comprar con gemas:</p>
+<ul>
+    <li><strong>Romantico</strong> &mdash; 30 preguntas sobre vuestra relacion</li>
+    <li><strong>Charla Profunda</strong> &mdash; 30 preguntas para conoceros mejor</li>
+    <li><strong>Juegos Divertidos</strong> &mdash; 30 preguntas para reir juntos</li>
+    <li><strong>Suenos y Futuro</strong> &mdash; 30 preguntas sobre vuestros planes</li>
+    <li><strong>Picante</strong> &mdash; 30 preguntas mas atrevidas</li>
+    <li><strong>Retos a Distancia</strong> &mdash; 30 retos para sobrellevar la distancia</li>
+    <li><strong>Pregunta Personalizada</strong> &mdash; Crea tus propias preguntas para dias concretos</li>
+</ul>
+
+<h3>Favoritos</h3>
+<p>Guarda las respuestas mas especiales de tu pareja para verlas cuando quieras.</p>
+
+<h3>Recordatorios Inteligentes</h3>
+<p>Notificaciones diarias a las 21:00 si aun no has respondido, con mensajes variados para evitar la monotonia.</p>
+
+<h3>Sistema de Gemas</h3>
+<ul>
+    <li>Gana gemas viendo anuncios recompensados (hasta 3 al dia)</li>
+    <li>Compra paquetes de gemas desde la tienda</li>
+    <li>Usa gemas para desbloquear packs de preguntas y preguntas personalizadas</li>
+</ul>
+
+<h3>Diseno Adaptable</h3>
+<p>Interfaz optimizada tanto para telefonos como para tablets (iPad), con escalado automatico de tipografia, botones y herramientas de dibujo.</p>
+
+<h3>Multiidioma</h3>
+<p>Disponible en Espanol e Ingles con cambio dinamico de idioma.</p>
+</div>
+
+<!-- ==================== FAQ ==================== -->
+<div class="section" id="faq">
 <h2>Preguntas Frecuentes</h2>
 
 <div class="faq">
-<h3>¿Cómo funciona NearYou?</h3>
-<p>NearYou te permite conectar con otras personas mediante códigos únicos. Simplemente genera un código en la app y compártelo con quien quieras. Esa persona introduce el código y podrán compartir contenido de forma privada.</p>
+<h3>Como funciona NearYou?</h3>
+<p>NearYou te propone una pregunta diaria que puedes responder con texto, dibujo, foto o cancion. Vinculaos con un codigo unico: tu pareja introduce tu codigo y podreis ver las respuestas del otro, chatear y mantener vuestra racha de dias.</p>
 </div>
 
 <div class="faq">
-<h3>¿Es gratuita la aplicación?</h3>
-<p>Sí, NearYou es completamente gratuita. La app se sostiene mediante anuncios opcionales que puedes ver.</p>
+<h3>Es gratuita la aplicacion?</h3>
+<p>Si, NearYou es gratuita. Puedes acceder a la pregunta diaria, los 4 tipos de respuesta, el chat y la racha sin coste. Opcionalmente puedes comprar gemas para desbloquear packs de preguntas tematicos.</p>
 </div>
 
 <div class="faq">
-<h3>¿Necesito registrarme con email?</h3>
-<p>No, NearYou funciona de forma completamente anónima. No necesitas proporcionar email, teléfono ni ningún dato personal para usarla.</p>
+<h3>Necesito registrarme con email?</h3>
+<p>No. NearYou utiliza autenticacion anonima. Solo necesitas elegir un nombre de usuario y, opcionalmente, subir una foto de perfil. No se requiere email, telefono ni datos personales reales.</p>
 </div>
 
 <div class="faq">
-<h3>¿Qué información necesito proporcionar?</h3>
-<p>Solo necesitas elegir un nombre de usuario para identificarte dentro de la app. Opcionalmente puedes subir una foto de perfil. No se requiere información personal real.</p>
+<h3>Como me vinculo con mi pareja?</h3>
+<p>En la pantalla de vinculacion, uno de los dos comparte su codigo unico. La otra persona introduce ese codigo en la app. Una vez vinculados, compartireis respuestas, chat y un monedero de gemas comun.</p>
 </div>
 
 <div class="faq">
-<h3>¿Usan mi ubicación GPS?</h3>
-<p>No, NearYou NO accede a tu ubicación GPS. La conexión entre usuarios se hace mediante códigos, no por proximidad geográfica.</p>
+<h3>Que son las gemas y como las consigo?</h3>
+<p>Las gemas son la moneda dentro de la app. Empiezas con 10 gemas gratis. Puedes ganar mas viendo anuncios recompensados (10 gemas por anuncio, hasta 3 al dia) o comprando paquetes de gemas en la tienda.</p>
 </div>
 
 <div class="faq">
-<h3>¿Cómo elimino mi cuenta?</h3>
-<p>Puedes solicitar la eliminación de tu cuenta y todos tus datos enviando un email a <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a>. Procesaremos tu solicitud en un máximo de 30 días.</p>
+<h3>Que pasa si no respondo un dia?</h3>
+<p>Tu racha de dias consecutivos se reiniciara. La app te envia un recordatorio a las 21:00 si aun no has respondido para ayudarte a mantener tu racha.</p>
 </div>
 
 <div class="faq">
-<h3>¿Puedo editar o eliminar mi contenido?</h3>
-<p>Sí, puedes gestionar todo tu contenido desde la aplicación. También puedes solicitar la eliminación completa contactándonos.</p>
+<h3>Usan mi ubicacion GPS?</h3>
+<p>No. NearYou NO accede a tu ubicacion GPS. La conexion entre usuarios se hace exclusivamente mediante codigos.</p>
 </div>
 
 <div class="faq">
-<h3>¿Por qué veo anuncios?</h3>
-<p>Los anuncios nos ayudan a mantener la app gratuita para todos. Usamos Google AdMob para mostrar anuncios relevantes.</p>
+<h3>Como elimino mi cuenta?</h3>
+<p>Puedes solicitar la eliminacion de tu cuenta y todos tus datos enviando un email a <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a>. Procesaremos tu solicitud en un maximo de 30 dias.</p>
+</div>
+
+<div class="faq">
+<h3>Puedo editar o eliminar mi contenido?</h3>
+<p>Si, puedes gestionar todo tu contenido desde la aplicacion. Tambien puedes solicitar la eliminacion completa contactandonos por email.</p>
 </div>
 </div>
 
-<div class="section">
-<h2>Contacto</h2>
-<div class="contact-box">
-<p><strong>¿Necesitas ayuda?</strong></p>
-<p>Email: <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a></p>
-<p style="margin-top: 10px; font-size: 0.9em; color: #666;">Respondemos en un plazo de 24-48 horas</p>
-</div>
-</div>
+<!-- ==================== POLITICA DE PRIVACIDAD ==================== -->
+<div class="section" id="privacy">
+<h2>Politica de Privacidad</h2>
+<p><em>Ultima actualizacion: Febrero 2026</em></p>
 
-<div class="section">
-<h2>Política de Privacidad</h2>
-<p><em>Última actualización: Enero 2025</em></p>
+<p>Esta Politica de Privacidad describe como NearYou ("nosotros", "la aplicacion") recopila, usa, almacena y protege la informacion de los usuarios. Al usar NearYou, aceptas las practicas descritas en esta politica.</p>
 
 <div class="positive">
-<strong>✅ Tu privacidad es importante:</strong> NearYou NO recopila tu ubicación GPS, NO requiere email ni teléfono, y funciona de forma completamente anónima.
+<strong>Tu privacidad es importante:</strong> NearYou NO recopila tu ubicacion GPS, NO requiere email ni telefono, y funciona mediante autenticacion anonima.
 </div>
 
-<h3>1. Información que Recopilamos</h3>
-<p>NearYou recopila únicamente la siguiente información:</p>
+<h3>1. Informacion que Recopilamos</h3>
+
+<h4>1.1 Informacion proporcionada por el usuario</h4>
 <ul>
-<li><strong>Nombre de usuario:</strong> El nombre que eliges para identificarte en la aplicación (no requiere ser tu nombre real).</li>
-<li><strong>Foto de perfil (opcional):</strong> Si decides subir una foto de perfil.</li>
-<li><strong>Contenido generado por ti:</strong> Todo el contenido que compartes en la aplicación:
-    <ul>
-    <li>Mensajes de texto</li>
-    <li>Imágenes subidas</li>
-    <li>URLs de canciones compartidas</li>
-    <li>Dibujos creados</li>
-    </ul>
-</li>
-<li><strong>Códigos de conexión:</strong> Los códigos generados para conectar con otros usuarios.</li>
-<li><strong>Datos técnicos básicos:</strong> Información automática como tipo de dispositivo, sistema operativo y versión de la app (para mantener la compatibilidad y corregir errores).</li>
+    <li><strong>Nombre de usuario:</strong> El nombre que eliges para identificarte (no requiere ser tu nombre real).</li>
+    <li><strong>Foto de perfil (opcional):</strong> Si decides subir una imagen de perfil.</li>
+    <li><strong>Fecha de nacimiento (opcional):</strong> Si decides proporcionarla.</li>
+    <li><strong>Contenido generado:</strong> Todo el contenido que creas y compartes:
+        <ul>
+            <li>Respuestas de texto a las preguntas diarias</li>
+            <li>Dibujos creados en el lienzo de la app</li>
+            <li>Fotografias subidas o capturadas</li>
+            <li>Enlaces a canciones compartidas (Spotify/Apple Music)</li>
+            <li>Mensajes de chat</li>
+            <li>Fotos enviadas en el chat</li>
+            <li>Preguntas personalizadas creadas</li>
+        </ul>
+    </li>
+    <li><strong>Respuestas marcadas como favoritas</strong></li>
 </ul>
 
-<h3>Información que NO Recopilamos</h3>
+<h4>1.2 Informacion generada automaticamente</h4>
+<ul>
+    <li><strong>Codigos de vinculacion:</strong> Codigos unicos generados para conectar con tu pareja.</li>
+    <li><strong>Datos de racha:</strong> Registro de dias consecutivos respondidos.</li>
+    <li><strong>Datos de gemas:</strong> Balance de gemas, historial de compras y anuncios vistos.</li>
+    <li><strong>Packs desbloqueados:</strong> Registro de packs de preguntas adquiridos.</li>
+    <li><strong>Datos tecnicos basicos:</strong> Tipo de dispositivo, sistema operativo, version de la app e idioma, necesarios para compatibilidad y correccion de errores.</li>
+    <li><strong>Identificador anonimo de Firebase:</strong> Identificador tecnico generado automaticamente sin vinculacion a datos personales reales.</li>
+</ul>
+
+<h4>1.3 Informacion que NO recopilamos</h4>
 <div class="positive">
 <ul>
-<li>❌ NO recopilamos tu ubicación GPS o geolocalización</li>
-<li>❌ NO requerimos ni almacenamos tu email</li>
-<li>❌ NO requerimos ni almacenamos tu número de teléfono</li>
-<li>❌ NO rastreamos tu identidad real</li>
-<li>❌ NO usamos Google Analytics ni servicios de seguimiento</li>
+    <li>NO recopilamos tu ubicacion GPS ni geolocalizacion</li>
+    <li>NO requerimos ni almacenamos tu email</li>
+    <li>NO requerimos ni almacenamos tu numero de telefono</li>
+    <li>NO rastreamos tu identidad real</li>
+    <li>NO accedemos a tus contactos</li>
+    <li>NO accedemos a tu microfono</li>
+    <li>NO accedemos a tu historial de llamadas</li>
 </ul>
 </div>
 
-<h3>2. Cómo Usamos tu Información</h3>
-<p>Utilizamos la información recopilada únicamente para:</p>
+<h3>2. Como Usamos tu Informacion</h3>
+<p>Utilizamos la informacion recopilada unicamente para:</p>
 <ul>
-<li>Permitirte conectar con otros usuarios mediante códigos</li>
-<li>Permitirte compartir y recibir contenido</li>
-<li>Mantener tu perfil dentro de la aplicación</li>
-<li>Mejorar la estabilidad y funcionalidad de la app</li>
-<li>Corregir errores técnicos</li>
-<li>Mantener la seguridad y prevenir abusos</li>
+    <li>Permitirte conectar con tu pareja mediante codigos de vinculacion</li>
+    <li>Mostrar y sincronizar respuestas diarias entre tu y tu pareja</li>
+    <li>Proporcionar el servicio de chat en tiempo real</li>
+    <li>Gestionar tu perfil, racha y balance de gemas</li>
+    <li>Entregar packs de preguntas y compras dentro de la app</li>
+    <li>Enviar recordatorios diarios y alertas de racha mediante notificaciones locales</li>
+    <li>Mejorar la estabilidad y funcionalidad de la app</li>
+    <li>Corregir errores tecnicos</li>
+    <li>Mantener la seguridad y prevenir abusos</li>
 </ul>
+<p><strong>No utilizamos tus datos para crear perfiles publicitarios propios ni los vendemos a terceros.</strong></p>
 
 <h3>3. Servicios de Terceros</h3>
-<p>NearYou utiliza los siguientes servicios de terceros:</p>
+<p>NearYou utiliza los siguientes servicios de terceros, cada uno con sus propias politicas de privacidad:</p>
 
-<h4>Firebase (Google)</h4>
+<h4>3.1 Firebase (Google)</h4>
 <p>Usamos Firebase para:</p>
 <ul>
-<li>Almacenamiento de datos (Firebase Database/Firestore)</li>
-<li>Autenticación anónima de usuarios</li>
-<li>Almacenamiento de imágenes (Firebase Storage)</li>
+    <li><strong>Autenticacion anonima:</strong> Para crear sesiones de usuario sin requerir datos personales.</li>
+    <li><strong>Cloud Firestore:</strong> Para almacenar y sincronizar respuestas, chat, rachas y datos de la pareja.</li>
+    <li><strong>Firebase Storage:</strong> Para almacenar fotos de perfil, dibujos y fotos compartidas.</li>
+    <li><strong>Firebase Analytics:</strong> Para recopilar datos anonimos de uso que nos ayudan a mejorar la app (tipo de dispositivo, version de la app, eventos de uso).</li>
+    <li><strong>Firebase Cloud Messaging:</strong> Para enviar notificaciones push.</li>
 </ul>
-<p>Firebase puede recopilar información técnica básica del dispositivo. Puedes consultar la política de privacidad de Firebase en: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+<p>Firebase puede recopilar identificadores de dispositivo e informacion tecnica basica. Politica de privacidad de Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
 
-<h4>Google AdMob</h4>
-<p>Usamos Google AdMob para mostrar anuncios en la aplicación. AdMob puede:</p>
+<h4>3.2 Google AdMob</h4>
+<p>Usamos Google AdMob para mostrar anuncios recompensados (que permiten ganar gemas). AdMob puede:</p>
 <ul>
-<li>Recopilar identificadores de publicidad del dispositivo</li>
-<li>Mostrar anuncios personalizados basados en tus intereses</li>
-<li>Rastrear interacciones con los anuncios</li>
+    <li>Recopilar identificadores de publicidad del dispositivo (IDFA/GAID)</li>
+    <li>Mostrar anuncios personalizados basados en tus intereses</li>
+    <li>Rastrear interacciones con los anuncios</li>
+    <li>Recopilar informacion sobre el dispositivo y la red</li>
 </ul>
-<p>Puedes optar por no recibir anuncios personalizados desde la configuración de tu dispositivo (iOS: Configuración > Privacidad > Publicidad > Limitar seguimiento de anuncios).</p>
-<p>Política de privacidad de AdMob: <a href="https://support.google.com/admob/answer/6128543" target="_blank">https://support.google.com/admob/answer/6128543</a></p>
-
-<h3>4. Compartir y Visibilidad de la Información</h3>
-<div class="important">
-<strong>⚠️ Importante:</strong> El contenido que compartes (texto, imágenes, canciones, dibujos) es visible para los usuarios con los que te conectas mediante código.
-</div>
-<p>Respecto a compartir información con terceros:</p>
+<p>Puedes optar por no recibir anuncios personalizados:</p>
 <ul>
-<li><strong>NO vendemos</strong> tu información personal a terceros</li>
-<li><strong>NO compartimos</strong> tu contenido con nadie excepto los usuarios que autorizas mediante código</li>
-<li>Solo compartimos datos con Firebase y AdMob según lo descrito anteriormente</li>
-<li>Podemos compartir información si es requerido por ley o para proteger nuestros derechos legales</li>
+    <li><strong>iOS:</strong> Ajustes &gt; Privacidad &gt; Publicidad de Apple &gt; Anuncios personalizados</li>
+    <li><strong>Android:</strong> Ajustes &gt; Google &gt; Anuncios &gt; Desactivar personalizacion de anuncios</li>
 </ul>
+<p>Politica de privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
-<h3>5. Almacenamiento y Seguridad</h3>
-<p>Tomamos medidas razonables para proteger tu información:</p>
+<h4>3.3 Servicios de compras dentro de la app</h4>
+<p>Las compras de gemas se procesan a traves de Apple App Store o Google Play Store segun tu dispositivo. No tenemos acceso a tus datos de pago (tarjeta de credito, etc.). Las transacciones son gestionadas integramente por Apple o Google.</p>
+
+<h3>4. Datos Sensibles del Dispositivo</h3>
+<p>NearYou solicita los siguientes permisos del dispositivo, todos opcionales excepto Internet:</p>
 <ul>
-<li>Los datos se almacenan en servidores seguros de Firebase</li>
-<li>Implementamos autenticación anónima para proteger tu identidad</li>
-<li>Los códigos de conexión son únicos y aleatorios</li>
-<li>Sin embargo, ningún sistema es 100% seguro, y no podemos garantizar seguridad absoluta</li>
+    <li><strong>Camara (opcional):</strong> Solo si deseas tomar fotos para tu perfil, respuestas o chat. La app no accede a la camara en segundo plano.</li>
+    <li><strong>Galeria de fotos (opcional):</strong> Solo si deseas seleccionar imagenes existentes. La app solo accede a las imagenes que tu seleccionas.</li>
+    <li><strong>Almacenamiento (opcional):</strong> Para guardar contenido descargado en tu dispositivo.</li>
+    <li><strong>Notificaciones (opcional):</strong> Para recibir recordatorios diarios y alertas de racha. Puedes desactivarlas en cualquier momento.</li>
+    <li><strong>Internet (requerido):</strong> Para sincronizar datos con tu pareja y acceder a los servicios de la app.</li>
 </ul>
-
-<h3>6. Tus Derechos</h3>
-<p>Tienes derecho a:</p>
-<ul>
-<li><strong>Acceder</strong> a tus datos almacenados</li>
-<li><strong>Corregir</strong> tu nombre de usuario o foto de perfil</li>
-<li><strong>Eliminar</strong> tu cuenta y todos tus datos</li>
-<li><strong>Descargar</strong> una copia de tu contenido</li>
-<li><strong>Limitar</strong> el seguimiento de anuncios desde la configuración de tu dispositivo</li>
-<li><strong>Oponerte</strong> al procesamiento de tus datos</li>
-</ul>
-<p>Para ejercer estos derechos, contáctanos en <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a></p>
-
-<h3>7. Retención de Datos</h3>
-<p>Conservamos tu información mientras:</p>
-<ul>
-<li>Tu cuenta esté activa</li>
-<li>Sea necesario para proporcionar el servicio</li>
-<li>Sea requerido para cumplir con obligaciones legales</li>
-</ul>
-<p>Cuando solicites la eliminación de tu cuenta, eliminaremos toda tu información dentro de los 30 días siguientes a la solicitud.</p>
-
-<h3>8. Menores de Edad</h3>
-<p>NearYou no está dirigida a menores de 13 años. No recopilamos intencionalmente información de niños menores de 13 años. Si descubrimos que hemos recopilado información de un menor de 13 años, eliminaremos esa información inmediatamente.</p>
-<p>Si eres padre o tutor legal y crees que tu hijo nos ha proporcionado información, contáctanos para que podamos eliminarla.</p>
-
-<h3>9. Permisos de la Aplicación</h3>
-<p>NearYou requiere los siguientes permisos:</p>
-<ul>
-<li><strong>Cámara (opcional):</strong> Solo si deseas tomar fotos para tu perfil o contenido</li>
-<li><strong>Galería de fotos (opcional):</strong> Solo si deseas subir imágenes existentes</li>
-<li><strong>Almacenamiento:</strong> Para guardar contenido temporalmente en tu dispositivo</li>
-<li><strong>Internet:</strong> Para conectar con otros usuarios y sincronizar contenido</li>
-</ul>
-<p>Puedes revocar estos permisos en cualquier momento desde la configuración de tu dispositivo, aunque esto puede limitar la funcionalidad de la aplicación.</p>
 
 <div class="positive">
-<strong>✅ Permisos que NO solicitamos:</strong>
+<strong>Permisos que NO solicitamos:</strong>
 <ul>
-<li>❌ Ubicación / GPS</li>
-<li>❌ Contactos</li>
-<li>❌ Micrófono (excepto si añades función de audio en el futuro)</li>
-<li>❌ Llamadas telefónicas</li>
+    <li>Ubicacion / GPS</li>
+    <li>Contactos</li>
+    <li>Microfono</li>
+    <li>Llamadas telefonicas</li>
+    <li>SMS</li>
+    <li>Calendario</li>
+    <li>Sensores corporales</li>
 </ul>
 </div>
 
-<h3>10. Cambios en esta Política</h3>
-<p>Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Te notificaremos de cambios significativos mediante:</p>
+<h3>5. Compartir y Visibilidad de la Informacion</h3>
+<div class="important">
+<strong>Importante:</strong> El contenido que compartes (texto, dibujos, fotos, canciones, mensajes de chat) es visible para tu pareja vinculada mediante codigo. No compartas tu codigo de vinculacion con personas en las que no confies.
+</div>
 <ul>
-<li>Una notificación en la aplicación</li>
-<li>Actualización de la fecha de "última actualización" en esta página</li>
+    <li><strong>NO vendemos</strong> tu informacion personal a terceros.</li>
+    <li><strong>NO compartimos</strong> tu contenido con nadie excepto tu pareja vinculada.</li>
+    <li>Solo compartimos datos tecnicos con Firebase, Analytics y AdMob segun lo descrito anteriormente.</li>
+    <li>Podemos compartir informacion si es requerido por ley, orden judicial o para proteger nuestros derechos legales.</li>
 </ul>
-<p>Te recomendamos revisar esta política periódicamente.</p>
 
-<h3>11. Jurisdicción</h3>
-<p>Esta aplicación es operada desde España y se rige por las leyes de la Unión Europea, incluyendo el Reglamento General de Protección de Datos (RGPD).</p>
+<h3>6. Almacenamiento y Seguridad de los Datos</h3>
+<ul>
+    <li>Los datos en la nube se almacenan en servidores seguros de Firebase (Google Cloud).</li>
+    <li>Los datos locales se almacenan en el dispositivo mediante Hive (almacenamiento encriptado local).</li>
+    <li>Usamos autenticacion anonima de Firebase para proteger tu identidad.</li>
+    <li>Los codigos de vinculacion son unicos y generados aleatoriamente.</li>
+    <li>Las respuestas se almacenan en cache localmente (hasta 50 elementos) para reducir la transferencia de datos.</li>
+    <li>Ninguna transmision de datos por Internet o metodo de almacenamiento electronico es 100% segura. Tomamos medidas razonables, pero no podemos garantizar seguridad absoluta.</li>
+</ul>
 
-<h3>12. Contacto sobre Privacidad</h3>
-<p>Si tienes preguntas, inquietudes o solicitudes sobre esta política de privacidad o el manejo de tus datos personales, contáctanos en:</p>
+<h3>7. Transferencias Internacionales de Datos</h3>
+<p>Tus datos pueden ser almacenados y procesados en servidores de Google Firebase ubicados fuera de tu pais de residencia, incluyendo Estados Unidos. Google cumple con los marcos legales aplicables para la transferencia internacional de datos. Al usar la app, consientes esta transferencia.</p>
+
+<h3>8. Retencion de Datos</h3>
+<p>Conservamos tu informacion mientras:</p>
+<ul>
+    <li>Tu cuenta este activa.</li>
+    <li>Sea necesario para proporcionar el servicio.</li>
+    <li>Sea requerido para cumplir con obligaciones legales.</li>
+</ul>
+<p>Cuando solicites la eliminacion de tu cuenta, eliminaremos toda tu informacion personal y contenido dentro de los 30 dias siguientes a la solicitud.</p>
+
+<h3>9. Tus Derechos</h3>
+<p>De acuerdo con el RGPD y otras legislaciones aplicables, tienes derecho a:</p>
+<ul>
+    <li><strong>Acceder</strong> a tus datos almacenados.</li>
+    <li><strong>Rectificar</strong> tu nombre de usuario, foto de perfil u otra informacion.</li>
+    <li><strong>Eliminar</strong> tu cuenta y todos tus datos ("derecho al olvido").</li>
+    <li><strong>Portar</strong> tus datos: solicitar una copia de tu contenido.</li>
+    <li><strong>Limitar</strong> el seguimiento de anuncios desde la configuracion de tu dispositivo.</li>
+    <li><strong>Oponerte</strong> al procesamiento de tus datos.</li>
+    <li><strong>Revocar</strong> permisos del dispositivo en cualquier momento desde la configuracion.</li>
+</ul>
+<p>Para ejercer estos derechos, contactanos en <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a>. Responderemos en un plazo maximo de 30 dias.</p>
+
+<h3>10. Privacidad de Menores de Edad</h3>
+<div class="warning">
+<strong>Importante &mdash; Proteccion de Menores:</strong>
+</div>
+<ul>
+    <li>NearYou <strong>no esta dirigida a menores de 13 anos</strong>. No recopilamos ni solicitamos intencionalmente informacion personal de ninos menores de 13 anos.</li>
+    <li>Si un menor de 13 anos nos ha proporcionado informacion personal sin el consentimiento de sus padres o tutores, eliminaremos esa informacion tan pronto como tengamos conocimiento de ello.</li>
+    <li>Los usuarios entre 13 y 17 anos deben contar con el consentimiento de sus padres o tutores legales para usar la aplicacion.</li>
+    <li>No mostramos anuncios personalizados a usuarios que identifiquemos como menores de edad.</li>
+    <li><strong>Padres y tutores:</strong> Si crees que tu hijo menor de 13 anos esta usando la app o nos ha proporcionado informacion personal, contactanos inmediatamente en <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a> para que podamos eliminar la informacion y restringir el acceso.</li>
+    <li>Cumplimos con la Ley de Proteccion de la Privacidad en Linea de los Ninos (COPPA), el RGPD y demas legislacion aplicable en materia de proteccion de menores.</li>
+</ul>
+
+<h3>11. Base Legal del Tratamiento (RGPD)</h3>
+<p>El tratamiento de datos se basa en:</p>
+<ul>
+    <li><strong>Consentimiento:</strong> Al usar la app, consientes el tratamiento descrito en esta politica.</li>
+    <li><strong>Ejecucion de contrato:</strong> El tratamiento es necesario para proporcionar el servicio (sincronizar respuestas, chat, gemas, etc.).</li>
+    <li><strong>Interes legitimo:</strong> Para mejorar la estabilidad de la app, corregir errores y prevenir abusos.</li>
+</ul>
+
+<h3>12. Cambios en esta Politica</h3>
+<p>Nos reservamos el derecho de actualizar esta politica de privacidad. Te notificaremos de cambios significativos mediante:</p>
+<ul>
+    <li>Actualizacion de la fecha de "ultima actualizacion" en esta pagina.</li>
+    <li>Notificacion dentro de la aplicacion para cambios sustanciales.</li>
+</ul>
+<p>El uso continuado de la app despues de la publicacion de cambios constituye tu aceptacion de la politica actualizada.</p>
+
+<h3>13. Jurisdiccion y Legislacion Aplicable</h3>
+<p>Esta aplicacion es operada desde Espana y se rige por las leyes de la Union Europea, incluyendo el Reglamento General de Proteccion de Datos (RGPD) y la Ley Organica de Proteccion de Datos y Garantia de los Derechos Digitales (LOPDGDD).</p>
+
+<h3>14. Contacto sobre Privacidad</h3>
+<p>Si tienes preguntas, inquietudes o solicitudes sobre esta politica de privacidad, el manejo de tus datos personales o deseas ejercer tus derechos, contactanos en:</p>
+<div class="contact-box">
 <p><strong>Email:</strong> <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a></p>
+<p style="margin-top: 10px; font-size: 0.9em; color: #666;">Respondemos en un plazo maximo de 30 dias</p>
+</div>
 </div>
 
-<div class="section">
-<h2>Términos y Condiciones</h2>
+<!-- ==================== TERMINOS Y CONDICIONES ==================== -->
+<div class="section" id="terms">
+<h2>Terminos y Condiciones</h2>
+<p><em>Ultima actualizacion: Febrero 2026</em></p>
 
-<h3>Aceptación de los Términos</h3>
-<p>Al usar NearYou, aceptas estos términos y condiciones. Si no estás de acuerdo, no uses la aplicación.</p>
+<h3>Aceptacion de los Terminos</h3>
+<p>Al descargar, instalar o usar NearYou, aceptas estos terminos y condiciones en su totalidad. Si no estas de acuerdo, no uses la aplicacion.</p>
+
+<h3>Descripcion del Servicio</h3>
+<p>NearYou es una aplicacion para parejas en relaciones a distancia que ofrece:</p>
+<ul>
+    <li>Preguntas diarias con multiples formatos de respuesta (texto, dibujo, foto, cancion)</li>
+    <li>Vinculacion con tu pareja mediante codigo unico</li>
+    <li>Chat en tiempo real</li>
+    <li>Racha de dias consecutivos</li>
+    <li>Packs de preguntas tematicos</li>
+    <li>Preguntas personalizadas</li>
+    <li>Sistema de gemas</li>
+</ul>
+
+<h3>Restricciones de Edad</h3>
+<div class="important">
+<strong>Debes tener al menos 13 anos para usar NearYou.</strong> Si eres menor de 18 anos, debes tener el permiso de tus padres o tutores legales. No recopilamos intencionalmente informacion de menores de 13 anos.
+</div>
 
 <h3>Uso Aceptable</h3>
 <p>Al usar NearYou, aceptas:</p>
 <ul>
-<li>Usar la aplicación solo para fines legales y apropiados</li>
-<li>No compartir contenido ofensivo, ilegal, amenazante, difamatorio o que viole derechos de terceros</li>
-<li>No usar la app para acosar, intimidar o dañar a otros usuarios</li>
-<li>No intentar hackear, comprometer o dañar la seguridad de la aplicación</li>
-<li>No suplantar la identidad de otras personas</li>
-<li>No usar la app para spam o actividades comerciales no autorizadas</li>
-<li>Respetar los derechos y la privacidad de otros usuarios</li>
-<li>No compartir códigos de conexión públicamente sin consentimiento</li>
+    <li>Usar la aplicacion solo para fines legales y apropiados</li>
+    <li>No compartir contenido ofensivo, ilegal, amenazante, difamatorio o que viole derechos de terceros</li>
+    <li>No usar la app para acosar, intimidar o danar a otros usuarios</li>
+    <li>No intentar hackear, comprometer o danar la seguridad de la aplicacion</li>
+    <li>No suplantar la identidad de otras personas</li>
+    <li>No usar la app para spam o actividades comerciales no autorizadas</li>
+    <li>Respetar los derechos y la privacidad de tu pareja</li>
+    <li>No compartir codigos de vinculacion publicamente sin consentimiento</li>
+    <li>No compartir contenido sexual que involucre a menores de edad</li>
 </ul>
 
 <h3>Contenido del Usuario</h3>
 <ul>
-<li>Eres el único responsable del contenido que compartes</li>
-<li>Garantizas tener los derechos necesarios sobre el contenido que subes (imágenes, texto, etc.)</li>
-<li>No subirás contenido que infrinja derechos de autor, marcas registradas u otros derechos de propiedad intelectual</li>
-<li>Nos otorgas una licencia no exclusiva para almacenar, procesar y mostrar tu contenido dentro de la aplicación</li>
-<li>Nos reservamos el derecho de eliminar contenido que viole estos términos sin previo aviso</li>
-<li>No somos responsables del contenido generado por otros usuarios</li>
+    <li>Eres el unico responsable del contenido que compartes (texto, dibujos, fotos, canciones, mensajes)</li>
+    <li>Garantizas tener los derechos necesarios sobre el contenido que subes</li>
+    <li>No subiras contenido que infrinja derechos de autor, marcas registradas u otros derechos de propiedad intelectual</li>
+    <li>Nos otorgas una licencia no exclusiva para almacenar, procesar y mostrar tu contenido dentro de la aplicacion con el fin de proporcionar el servicio</li>
+    <li>Nos reservamos el derecho de eliminar contenido que viole estos terminos sin previo aviso</li>
+    <li>No somos responsables del contenido generado por otros usuarios</li>
 </ul>
 
-<h3>Restricciones de Edad</h3>
-<p>Debes tener al menos 13 años para usar NearYou. Si eres menor de 18 años, debes tener el permiso de tus padres o tutores legales para usar la aplicación.</p>
-
-<h3>Códigos de Conexión</h3>
+<h3>Codigos de Vinculacion</h3>
 <ul>
-<li>Eres responsable de con quién compartes tus códigos de conexión</li>
-<li>No compartas códigos con personas que no conoces o en las que no confías</li>
-<li>Puedes revocar el acceso eliminando la conexión en cualquier momento</li>
-<li>No somos responsables del mal uso de códigos compartidos por ti</li>
+    <li>Eres responsable de con quien compartes tu codigo de vinculacion</li>
+    <li>No compartas codigos con personas en las que no confies</li>
+    <li>Puedes revocar el acceso eliminando la vinculacion en cualquier momento</li>
+    <li>No somos responsables del mal uso de codigos compartidos por ti</li>
+</ul>
+
+<h3>Compras dentro de la App y Gemas</h3>
+<ul>
+    <li>Las gemas son una moneda virtual dentro de la app sin valor monetario fuera de ella</li>
+    <li>Las compras de gemas se procesan a traves de Apple App Store o Google Play Store</li>
+    <li>Las politicas de reembolso son las de la tienda correspondiente (Apple/Google)</li>
+    <li>Las gemas y packs comprados se comparten con tu pareja vinculada</li>
+    <li>Nos reservamos el derecho de modificar precios y cantidades de las ofertas de gemas</li>
+</ul>
+
+<h3>Anuncios</h3>
+<ul>
+    <li>La aplicacion muestra anuncios recompensados proporcionados por Google AdMob</li>
+    <li>Los anuncios recompensados son voluntarios: el usuario elige verlos a cambio de gemas</li>
+    <li>No controlamos el contenido de los anuncios mostrados</li>
+    <li>No somos responsables de las interacciones que tengas con los anunciantes</li>
 </ul>
 
 <h3>Disponibilidad del Servicio</h3>
 <p>Hacemos nuestro mejor esfuerzo por mantener el servicio disponible, pero no garantizamos:</p>
 <ul>
-<li>Acceso ininterrumpido al servicio</li>
-<li>Que el servicio estará libre de errores</li>
-<li>Que se guardarán todos los datos de forma permanente</li>
+    <li>Acceso ininterrumpido al servicio</li>
+    <li>Que el servicio estara libre de errores</li>
+    <li>Que se guardaran todos los datos de forma permanente</li>
 </ul>
-<p>Nos reservamos el derecho de modificar, suspender o discontinuar el servicio (o cualquier parte de él) en cualquier momento, con o sin previo aviso.</p>
+<p>Nos reservamos el derecho de modificar, suspender o discontinuar el servicio en cualquier momento.</p>
 
-<h3>Limitación de Responsabilidad</h3>
-<p>NearYou se proporciona "tal cual" y "según disponibilidad". En la máxima medida permitida por la ley, no nos hacemos responsables por:</p>
+<h3>Limitacion de Responsabilidad</h3>
+<p>NearYou se proporciona "tal cual" y "segun disponibilidad". En la maxima medida permitida por la ley, no nos hacemos responsables por:</p>
 <ul>
-<li>Pérdida de datos o contenido</li>
-<li>Daños directos, indirectos, incidentales o consecuentes derivados del uso de la aplicación</li>
-<li>Interacciones entre usuarios</li>
-<li>Contenido generado por usuarios</li>
-<li>Uso inadecuado de códigos de conexión</li>
-<li>Problemas técnicos, caídas del servidor o pérdida de conectividad</li>
-<li>Acciones de terceros (incluyendo Firebase y AdMob)</li>
-</ul>
-
-<h3>Anuncios</h3>
-<ul>
-<li>La aplicación muestra anuncios proporcionados por Google AdMob</li>
-<li>No controlamos el contenido de los anuncios mostrados</li>
-<li>No somos responsables de las interacciones que tengas con los anunciantes</li>
-<li>Los anuncios pueden dirigirte a sitios web externos (usas estos sitios bajo tu propio riesgo)</li>
+    <li>Perdida de datos, contenido, rachas o gemas</li>
+    <li>Danos directos, indirectos, incidentales o consecuentes derivados del uso de la aplicacion</li>
+    <li>Interacciones entre usuarios</li>
+    <li>Contenido generado por usuarios</li>
+    <li>Uso inadecuado de codigos de vinculacion</li>
+    <li>Problemas tecnicos, caidas del servidor o perdida de conectividad</li>
+    <li>Acciones de terceros (incluyendo Firebase, AdMob, Apple o Google)</li>
 </ul>
 
 <h3>Propiedad Intelectual</h3>
 <ul>
-<li>NearYou y todos sus elementos (diseño, código, marca, etc.) son propiedad del desarrollador</li>
-<li>No puedes copiar, modificar, distribuir o crear trabajos derivados de la aplicación</li>
-<li>Conservas todos los derechos sobre el contenido que creas y compartes</li>
+    <li>NearYou y todos sus elementos (diseno, codigo, marca, graficos, etc.) son propiedad del desarrollador</li>
+    <li>No puedes copiar, modificar, distribuir o crear trabajos derivados de la aplicacion</li>
+    <li>Conservas todos los derechos sobre el contenido original que creas y compartes</li>
 </ul>
 
-<h3>Terminación</h3>
-<p>Nos reservamos el derecho de suspender o terminar tu acceso a la aplicación si:</p>
-<ul>
-<li>Violas estos términos y condiciones</li>
-<li>Usas la app de forma que daña a otros usuarios</li>
-<li>Participas en actividades ilegales</li>
-<li>Por cualquier otra razón que consideremos apropiada para proteger el servicio o a otros usuarios</li>
-</ul>
-<p>Puedes dejar de usar la aplicación en cualquier momento y solicitar la eliminación de tu cuenta.</p>
+<h3>Terminacion</h3>
+<p>Nos reservamos el derecho de suspender o terminar tu acceso si violas estos terminos, usas la app para danar a otros, o participas en actividades ilegales. Puedes dejar de usar la aplicacion en cualquier momento y solicitar la eliminacion de tu cuenta.</p>
 
-<h3>Cambios en los Términos</h3>
-<p>Podemos modificar estos términos en cualquier momento. Te notificaremos de cambios importantes mediante la aplicación o esta página. El uso continuado de la aplicación después de los cambios constituye tu aceptación de los nuevos términos.</p>
+<h3>Cambios en los Terminos</h3>
+<p>Podemos modificar estos terminos en cualquier momento. El uso continuado de la aplicacion despues de los cambios constituye tu aceptacion de los nuevos terminos.</p>
 
 <h3>Ley Aplicable</h3>
-<p>Estos términos se rigen por las leyes de España y la Unión Europea. Cualquier disputa se resolverá en los tribunales competentes de España.</p>
+<p>Estos terminos se rigen por las leyes de Espana y la Union Europea. Cualquier disputa se resolvera en los tribunales competentes de Espana.</p>
+</div>
 
-<h3>Contacto</h3>
-<p>Si tienes preguntas sobre estos términos y condiciones, contáctanos en:</p>
-<p><strong>Email:</strong> <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a></p>
+<!-- ==================== CONTACTO ==================== -->
+<div class="section" id="contact">
+<h2>Contacto y Soporte</h2>
+<div class="contact-box">
+<p><strong>Necesitas ayuda o tienes alguna pregunta?</strong></p>
+<p>Email: <a href="mailto:david01mc@gmail.com">david01mc@gmail.com</a></p>
+<p style="margin-top: 10px; font-size: 0.9em; color: #666;">Respondemos en un plazo de 24-48 horas</p>
+</div>
+<p style="margin-top: 15px; text-align: center; color: #666;">Para solicitudes de eliminacion de datos, ejercicio de derechos de privacidad o reportar contenido inapropiado, utiliza el email indicado arriba.</p>
 </div>
 
 <footer>
-<p><strong>&copy; 2025 NearYou</strong></p>
+<p><strong>&copy; 2026 NearYou</strong></p>
 <p>Todos los derechos reservados</p>
-<p style="margin-top: 10px;">Última actualización: Enero 2025</p>
+<p style="margin-top: 10px;">Ultima actualizacion: Febrero 2026</p>
 </footer>
 
 </body>
